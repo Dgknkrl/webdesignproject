@@ -41,7 +41,7 @@ Web sitesi 7 ana sayfadan oluşmaktadır:
 Projenin geliştirilmesinde aşağıdaki teknolojiler kullanılmıştır:
 - **HTML5**: Sayfaların temel yapısını oluşturmak için kullanıldı.
 - **CSS3**: Görsel tasarım, responsive yapı ve sayfa düzenlemeleri için kullanıldı.
-- - **Javascript**: Sitenin butonlarının ve slider gibi işlevlerinin çalışması için kullanıldı.
+- **Javascript**: Sitenin butonlarının ve slider gibi işlevlerinin çalışması için kullanıldı.
 
 ---
 
@@ -60,7 +60,7 @@ Projenin geliştirilmesinde aşağıdaki teknolojiler kullanılmıştır:
 |-- admin.html             # Admin giriş sayfası
 |-- images/                # Görseller ve diğer medya dosyaları
 |-- css/                   # Stil dosyaları
-|-- js/                    # JavaScript dosyaları (geliştirilirse)
+|-- js/                    # JavaScript dosyaları
 ```
 
 ---
@@ -70,7 +70,7 @@ Bu projeyi bilgisayarınızda çalıştırmak için aşağıdaki adımları izle
 
 1. Proje dosyalarını indirin veya klonlayın:
    ```bash
-   git clone https://github.com/kullaniciadi/deek-travel-site.git
+   git clone https://github.com/Dgknkrl/webdesignproject.git
    ```
 
 2. İndirdiğiniz klasörde **index.html** dosyasını bir tarayıcıda açarak siteyi görüntüleyebilirsiniz.
