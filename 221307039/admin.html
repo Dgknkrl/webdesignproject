@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | DeeK</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Carme&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,700;1,900&family=Varela+Round&display=swap"
+    rel="stylesheet">
+
+
+<body>
+    <div class="body_container">
+        <div class="left">
+            <!-- ÜRÜNLER
+                KAMPANYALAR
+                BİRİMLER
+                REZERVASYONLAR -->
+            <ul>
+                <li><a href="#urunler">ÜRÜNLER</a></li>
+                <li><a href="#birimler">BİRİMLER</a></li>
+                <li><a href="#kampanyalar">KAMPANYALAR</a></li>
+                <li><a href="#rezervasyonlar">REZERVASYONLAR</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- URUNLER SECTION START-->
+            <div class="urunler" id="urunler">
+                <div class="urunler_container">
+                    <div class="header_urunler">
+                        <h1>ÜRÜNLER</h1>
+                        <button class="add_button">+ Yeni Ürün Ekle</button>
+                        <div class="ekle_div">
+                            <table>
+                                <tbody>
+                                    <tr class="ekle">
+                                        <td>
+                                            <input type="text" name="urun_no" id="urun_no" placeholder="Ürün Numarası">
+                                        </td>
+                                        <td>
+                                            <input type="text" name="yer" id="yer" placeholder="Yer">
+                                        </td>
+                                        <td><input type="text" name="bt" id="bt" placeholder="Başlangıç Tarihi">
+                                        </td>
+                                        <td><input type="text" name="lt" id="lt" placeholder="Bitiş Tarihi"></td>
+                                        <td>
+                                            <input type="text" name="fiyat" id="fiyat" placeholder="Fiyat">
+                                        </td>
+                                        <td>
+                                            <input type="text" name="konaklama" id="konaklama" placeholder="Konaklama">
+                                        </td>
+                                        <td>
+                                            <input type="text" name="ulasim" id="ulasim" placeholder="Ulaşım">
+                                        </td>
+                                        <td>
+                                            <input type="text" name="rehberlik" id="rehberlik" placeholder="Rehberlik">
+                                        </td>
+                                        <td>
+                                            <input type="text" name="yemek" id="yemek" placeholder="Yemek">
+                                        </td>
+                                        <td>
+                                            <input type="text" name="aktivite" id="aktivite" placeholder="Aktivite">
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <button class="urun_ekle_onay">Onayla</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_urunler">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ürün Numarası</th>
+                                    <th>Yer</th>
+                                    <th>Başlangıç Tarihi</th>
+                                    <th>Bitiş Tarihi</th>
+                                    <th>Fiyat</th>
+                                    <th>Konaklama</th>
+                                    <th>Ulaşım</th>
+                                    <th>Rehberlik</th>
+                                    <th>Yemek Öğünleri</th>
+                                    <th>Aktiviteler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>L1</th>
+                                    <th>London</th>
+                                    <th>08.12.2025</th>
+                                    <th>08.01.2026</th>
+                                    <th>150.000TL</th>
+                                    <th>Var</th>
+                                    <th>Uçak - Özel Araç</th>
+                                    <th>Yok</th>
+                                    <th>Kahvaltı - Akşam Yemeği</th>
+                                    <th>Deniz Kenarı, Akşam Konseri</th>
+                                    <th>Düzenle</th>
+                                    <th>Sil</th>
+                                </tr>
+                                <tr>
+                                    <th>L2</th>
+                                    <th>London</th>
+                                    <th>08.12.2025</th>
+                                    <th>08.01.2026</th>
+                                    <th>150.000TL</th>
+                                    <th>Var</th>
+                                    <th>Uçak - Özel Araç</th>
+                                    <th>Yok</th>
+                                    <th>Kahvaltı - Akşam Yemeği</th>
+                                    <th>Deniz Kenarı, Akşam Konseri</th>
+                                    <th>Düzenle</th>
+                                    <th>Sil</th>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="urunler" id="birimler">
+                <div class="urunler_container">
+                    <div class="header_urunler">
+                        <h1>BİRİMLER</h1>
+                        <button class="add_button">+ Yeni Birim Ekle</button>
+                        <div class="ekle_div">
+                            <table>
+                                <tbody>
+                                    <tr class="ekle">
+                                        <td><input type="text" name="birim_adi" placeholder="Birim Adı" id="birim_adi">
+                                        </td>
+                                        <td><input type="text" name="birim_kategorisi" id="birim_kategorisi"
+                                                placeholder="Kategori"></td>
+                                        <td><input type="text" name="birim_aciklama" id="birim_aciklama"
+                                                placeholder="Açıklama"></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <button class="urun_ekle_onay">Onayla</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_urunler">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Birim Adı</th>
+                                    <th>Kategori</th>
+                                    <th>Açıklama</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Kültürel Birim</th>
+                                    <th>Kültür</th>
+                                    <th>Kültürel Etkinliklerin Yapıldığı Birimdir.</th>
+                                </tr>
+                                <tr>
+                                    <th>Kültürel Birim</th>
+                                    <th>Kültür</th>
+                                    <th>Kültürel Etkinliklerin Yapıldığı Birimdir.</th>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="urunler" id="kampanyalar">
+                <div class="urunler_container">
+                    <div class="header_urunler">
+                        <h1>KAMPANYALAR</h1>
+                        <button class="add_button">+ Yeni Kampanya Ekle</button>
+                        <div class="ekle_div">
+                            <table>
+                                <tbody>
+                                    <tr class="ekle">
+                                        <td><input type="text" name="kampanya_adi" id="kampanya_adi"
+                                                placeholder="Kampanya Adı"></td>
+                                        <td><input type="text" name="kampanya_baslangic" id="kampanya_baslangic"
+                                                placeholder="Başlangıç Tarihi"></td>
+                                        <td><input type="text" name="kampanya_bitis" id="kampanya_bitis"
+                                                placeholder="Bitiş Tarihi"></td>
+                                        <td><input type="text" name="kampanya_aciklama" id="kampanya_aciklama"
+                                                placeholder="Açıklama"></td>
+                                        <td><input type="text" name="kampanya_gorsel" id="kampanya_gorsel"
+                                                placeholder="Görsel Linki"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <button class="urun_ekle_onay">Onayla</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_urunler">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kampanya Adı</th>
+                                    <th>Başlangıç Tarihi</th>
+                                    <th>Bitiş Tarihi</th>
+                                    <th>Açıklama</th>
+                                    <th>Görsel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Arkadaşını Getir, Avantajı Götür!</th>
+                                    <th>08.12.2025</th>
+                                    <th>08.01.2026</th>
+                                    <th>Arkadaşını davet et, sen bir sonraki tatilinde 500₺ indirim kazan, arkadaşın ise
+                                        ilk rezervasyonunda %10 indirim fırsatı yakalasın! Hemen katıl ve
+                                        hayallerinizdeki tatili daha kazançlı hale getirin!</th>
+                                    <th>
+                                        https://metarootai.com
+                                    </th>
+                                    <th>
+                                        Düzenle
+                                    </th>
+                                    <th>Sil</th>
+                                </tr>
+                                <tr>
+                                    <th>Güneşli Günler Seni Bekliyor!</th>
+                                    <th>01.06.2025</th>
+                                    <th>30.09.2025</th>
+                                    <th>Yaz tatiline şimdiden hazırlan, %15 erken rezervasyon indirimiyle avantajlı çık!
+                                        Üstelik bu kampanyayla, seçili turlarda ücretsiz ekstra tur fırsatını da yakala.
+                                        Planını yap, hayalini kur, tatilin tadını çıkar!</th>
+                                    <th>
+                                        https://metarootai.com
+                                    </th>
+                                    <th>
+                                        Düzenle </th>
+                                    <th>
+                                        Sil
+                                    </th>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="urunler" id="rezervasyonlar">
+                <div class="urunler_container">
+                    <div class="header_urunler">
+                        <h1>REZERVASYONLAR</h1>
+                        <button class="add_button">+ Yeni Rezervasyon Ekle</button>
+                        <div class="ekle_div">
+                            <table>
+                                <tbody>
+                                    <tr class="ekle">
+                                        <td><input type="text" name="urun_number" id="urun_number" placeholder="Ürün Numarası"></td>
+                                        <td><input type="text" name="rez_bt" id="rez_bt" placeholder="Başlangıç Tarihi"></td>
+                                        <td><input type="text" name="rez_lt" id="rez_lt" placeholder="Bitiş Tarihi"></td>
+                                        <td><input type="text" name="rez_adi_soyadi" id="rez_adi_soyadi" placeholder="Adı Soyadı"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <button class="urun_ekle_onay">Onayla</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_urunler">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ürün Numarası</th>
+                                    <th>Başlangıç Tarihi</th>
+                                    <th>Bitiş Tarihi</th>
+                                    <th>Rezervasyonu Yapanın Adı Soyadı</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>L1</th>
+                                    <th>05.11.2024</th>
+                                    <th>22.01.2025</th>
+                                    <th>Doğukan Kıralı</th>
+                                </tr>
+                                <tr>
+                                    <th>L1</th>
+                                    <th>05.11.2024</th>
+                                    <th>22.01.2025</th>
+                                    <th>Eda Kıralı</th>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

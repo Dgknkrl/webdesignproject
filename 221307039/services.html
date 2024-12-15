@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <title>Hizmetler | DeeK</title>
+
+   <link rel="stylesheet" href="css/services.css">
+
+</head>
+
+<body>
+   <!-- HEADER SECTION START -->
+   <div class="header">
+      <div class="navbar">
+         <div class="logo_area">
+            <img src="images/logo/logo.png" alt="logo" class="site_logo">
+            <img src="images\logo\down.png" alt="down" class="menu_arrow" id="menu_arrow">
+         </div>
+         <nav id="nav">
+            <div class="nav_list" id="nav_list">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">ANA SAYFA</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">HAKKIMIZDA</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="urun" onclick="bar_open('urun')">ÜRÜNLERİMİZ</a>
+                     <div class="open_bar" id="urun_bar">
+                        <a href="london.html">London Turu</a>
+                        <a href="istanbul.html">İstanbul Turu</a>
+                        <a href="Rize.html">Rize Turu</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="birim" onclick="bar_open('birim')">BİRİMLERİMİZ</a>
+                     <div class="open_bar" id="birim_bar">
+                        <a href="macera.html">Macera Gezi Birimi</a>
+                        <a href="kulturel.html">Kültürel Gezi Birimi</a>
+                        <a href="doga.html">Doğa Gezi Birimi</a>
+                        <a href="kamp.html">Kamp Birimi</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="mv.html">MİSYON-VİZYON</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="contact.html">İLETİŞİM</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+   <!-- HEADER SECTION END -->
+   <!-- services section start -->
+   <div class="services_section">
+      <div class="container">
+         <div class="header_services_info">
+            <h1 class="services_taital">Services </h1>
+            <p class="services_text">
+               Keşfetmek, macera yaşamak ve doğanın tadını çıkarmak isteyenler için benzersiz deneyimler sunuyoruz.
+               Sizlere, huzurlu manzaralardan adrenalin dolu anlara kadar her türlü yolculuğu yaşama fırsatı sunuyoruz.
+               Profesyonel ekibimiz ve özel planlarımızla unutulmaz bir seyahat deneyimi yaşamanız için buradayız.
+               Tatil anlayışınızı bir üst seviyeye taşımak için bizi tercih edin! 🌍
+            </p>
+         </div>
+         <div class="row">
+            <div class="services_card">
+               <div><img src="images/img-1.png" class="services_img"></div>
+               <div class="btn_main"><a href="#">Rafting</a></div>
+            </div>
+            <div class="services_card">
+               <div><img src="images/img-2.png" class="services_img"></div>
+               <div class="btn_main active"><a href="#">Hiking</a></div>
+            </div>
+            <div class="services_card">
+               <div><img src="images/img-3.png" class="services_img"></div>
+               <div class="btn_main"><a href="#">Camping</a></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- services section end -->
+   <!-- footer section start -->
+   <div class="footer_section">
+      <div class="footer_container">
+         <div class="input_btn_main">
+            <input type="text" class="mail_text" placeholder="Enter your email">
+            <div class="subscribe_bt"><a href="#">Abone Ol</a></div>
+         </div>
+         <div class="social_icon">
+            <ul>
+               <li><a href="#"><img class="footer_icons_image" src="images/logo/1-whatsapp.png" alt="whatsapp" id="wp"
+                        onmouseover="mouseover('wp')" onmouseout="mouseout('wp')"></a></li>
+               <li><a href="#"><img class="footer_icons_image" src="images/logo/1-email.png" alt="mail" id="em"
+                        onmouseover="mouseover('em')" onmouseout="mouseout('em')"></a></li>
+               <li><a href="#"><img class="footer_icons_image" src="images/logo/1-linkedin.png" alt="linkedin" id="in"
+                        onmouseover="mouseover('in')" onmouseout="mouseout('in')"></a></li>
+               <li><a href="#"><img class="footer_icons_image" src="images/logo/1-insta.png" alt="instagram" id="ins"
+                        onmouseover="mouseover('ins')" onmouseout="mouseout('ins')"></a></li>
+               <li><a href="#"><img class="footer_icons_image" src="images/logo/1-twitter.png" alt="x" id="tw"
+                        onmouseover="mouseover('tw')" onmouseout="mouseout('tw')"> </a></li>
+               <li><a href="#"><img class="footer_icons_image" src="images/logo/1-face.png" alt="facebook" id="fb"
+                        onmouseover="mouseover('fb')" onmouseout="mouseout('fb')"></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://metarootai.com">DeeK</a></p>
+      </div>
+   </div>
+   <!-- copyright section end -->
+   <script>
+
+
+      function mouseover(id) {
+         var image = document.getElementById(id);
+         image.src = image.src.replace("/1-", "/2-");
+      }
+
+      function mouseout(id) {
+         var image = document.getElementById(id);
+         image.src = image.src.replace("/2-", "/1-");
+      }
+      function bar_open(index) {
+
+         if (index == 'birim') {
+            const birim = document.getElementById('birim_bar')
+            if (birim.style.height == '0px') {
+               birim.style.height = '130px'
+            }
+            else {
+               birim.style.height = '0px'
+            }
+         }
+         if (index == 'urun') {
+            const urun = document.getElementById('urun_bar')
+            if (urun.style.height == '0px') {
+               urun.style.height = '100px'
+            }
+            else {
+               urun.style.height = '0px'
+            }
+         }
+      }
+
+      document.getElementById('menu_arrow').addEventListener('click', function () {
+         var element = document.getElementById('nav').style.display
+         element == 'none' ? element = 'block' : element = 'none';
+         document.getElementById('nav').style.display = element;
+
+         let deg = document.getElementById('menu_arrow')
+         if (deg.style.transform == 'rotate(180deg)') {
+            deg.style.transform = 'rotate(0deg)'
+         }
+         else {
+            deg.style.transform = 'rotate(180deg)'
+         }
+      })
+   </script>
+</body>
+
+</html>

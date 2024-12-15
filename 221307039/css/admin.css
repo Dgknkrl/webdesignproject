@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li,
+ul,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: black;
+}
+*{
+    box-sizing: border-box;
+}
+.body_container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+.left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh;
+    background-color: #122C2D;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.left ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    margin: 100px 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.left ul li {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.left ul li a {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-family: "Varela Round", serif;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.left ul li a:hover{
+    background-color: #ff6347;
+}
+
+.right {
+    width: 100%;
+    padding: 85px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 100px;
+    height: 100vh;
+    overflow: scroll;
+    padding-left: 300px;
+}
+.header_urunler h1{
+    background-color: #1f1f1f;
+    width: fit-content;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+}
+.header_urunler button{
+    background-color: #ff6347;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+}
+.list_urunler{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+table{
+    margin: 20px 0px;
+}
+thead th{
+    background-color: #ff6347;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+tbody tr th{
+    border: 1px solid black;
+    padding: 10px 20px;
+    max-width: 400px;
+    height: fit-content;
+    border-radius: 4px;
+}
+
+tbody tr:nth-child(2n){
+    background-color: #ff63479d;
+}
+.ekle td input{
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    max-width: 150px;
+}
+.ekle td input:focus{
+    outline: 2px solid #ff6347;
+    border: none;
+    box-sizing: border-box;
+}
+#birimler,
+#kampanyalar,
+#rezervasyonlar{
+    margin-top: 100vh;
+}
+#rezervasyonlar{
+    margin-bottom: 100vh;
+}
